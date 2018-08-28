@@ -1,0 +1,23 @@
+<form class="loginWrap" [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <h2 class="headline">Enter Your Email and Password</h2>
+  <mat-icon>keyboard_arrow_down</mat-icon>
+  <mat-form-field class="w-100">
+    <input type="text" matInput placeholder="Email" formControlName="email">
+  </mat-form-field>
+  <span *ngIf="form.get('email').invalid && form.get('email').touched">Please write correctly email</span>
+
+  <mat-form-field class="w-100">
+    <input type="password" matInput placeholder="Password" formControlName="password">
+  </mat-form-field>
+  <span *ngIf="form.get('password').invalid && form.get('password').touched">Please write correctly password</span>
+  <span *ngIf="message">{{message.text}}</span>
+
+  <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">LOGIN</button>
+
+  <span class="registerLink">
+    If You not registarations in our site, Please go to
+    <a routerLink="/registration">Registration</a>
+  </span>
+
+</form>

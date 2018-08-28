@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+    "id": 1,
+    "email": "qwert@i.ua",
+    "password": "123456"
+  }, 
+  {
+    "id": 2,
+    "email": "q@i.ua",
+    "password": "123457"
+  }
+]
+
+}

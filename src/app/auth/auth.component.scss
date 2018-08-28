@@ -1,0 +1,68 @@
+*, h1, h2, h3, h4 {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.f-sz-18 {
+  font-size: 26px !important;
+}
+
+.authContainer {
+  background-color: rgb(216, 214, 214);
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10vh;
+}
+
+.loginRegisterForm {
+  background-color: white;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  margin: 0 auto;
+  max-width: 30vw;
+  display: flex;
+  align-items: center;
+  flex-flow: column
+}
+
+.loginRegisterForm_title {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 100%;
+  padding: 2vmax;
+  background-color: rgb(75, 133, 207);
+  color: rgb(255, 255, 255);
+}
+
+.loginRegisterForm_body {
+  padding: 2vmax;
+  width: 100%;
+}
+
+.loginWrap {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.loginWrap h2 {
+  margin: 2vh 0;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgb(92, 91, 90);
+}
+
+.loginWrap mat-checkbox {
+  margin: 3vh 0;
+}
+
+.registerLink {
+  margin-top: 4vh;
+  color: rgb(109, 110, 110);
+  font-size: 15px;
+}

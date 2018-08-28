@@ -1,0 +1,25 @@
+<div class="loginWrap">
+
+  <h2 class="f-sz-18">Registration</h2>
+
+  <mat-form-field class="w-100">
+    <input type="text" matInput placeholder="Your Name">
+  </mat-form-field>
+
+  <mat-form-field class="w-100">
+    <input type="text" matInput placeholder="Login">
+  </mat-form-field>
+
+  <mat-form-field class="w-100">
+    <input #message type="password" matInput placeholder="Password">
+    <mat-hint align="start">
+      <strong>Maximum 12 symbols</strong>
+    </mat-hint>
+    <mat-hint align="end">{{message.value.length}} / 12</mat-hint>
+  </mat-form-field>
+
+  <mat-checkbox color="primary">I agree with all rules</mat-checkbox>
+
+  <button mat-raised-button color="primary">Registation</button>
+
+</div>
